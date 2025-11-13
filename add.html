@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+    <link rel="stylesheet" href="css/add.css" type="text/css">
+    <link rel="stylesheet" href="css/volver.css" type="text/css">
+</head>
+<body>
+    <h1>Alta de alumnos</h1>
+    <form action="add.php" method="post">
+       Ingrese nombre: 
+         <input type="text" name="nombre" required> <br><br>
+         Ingrese email: 
+         <input type="email" name="mail" required> <br><br>
+         Selecione el curso:
+         <select name="codigocurso">
+            <option value="1">PHP</option>
+            <option value="2">ASP</option>
+            <option value="3">JSP</option> 
+         </select>
+         <br><br>
+         <input type="submit" value="Registrar"> 
+    </form>
+    <br><br>
+
+    <div class="volver">
+        <a href="index.html" class="btn-volver">Volver</a>
+    </div>
+</body>
+</html>
