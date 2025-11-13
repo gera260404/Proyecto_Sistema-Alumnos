@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 13-11-2025 a las 16:10:25
+-- Tiempo de generación: 13-11-2025 a las 16:28:53
 -- Versión del servidor: 5.7.17-log
 -- Versión de PHP: 5.6.30
 
