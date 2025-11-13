@@ -1,0 +1,20 @@
+.volver {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-volver {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #df7b24;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-volver:hover {
+    background-color: #d8a659;
+    transform: translateY(-3px);
+}

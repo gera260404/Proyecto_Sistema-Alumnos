@@ -1,0 +1,112 @@
+/* ==============================
+   ESTILOS PARA listado.php
+   ============================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2e8bff, #6f00ff);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    /* Contenedor principal que encapsula el título y la tabla */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 900px; /* Ancho máximo para una tabla */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    animation: slideIn 1.0s ease-out;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #eceae3; /* Destacar el título con el color amarillo/dorado */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Estilos de la Tabla --- */
+
+.table {
+    overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+    margin: 0 auto;
+}
+
+thead th {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente para el encabezado */
+    color: #ead2c1;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.05rem;
+    border-bottom: 2px solid #ffcc00; /* Línea de color de acento */
+}
+
+tbody td {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo más sutil para las filas de datos */
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.25); /* Efecto hover para la fila */
+}
+
+/* Efecto cebra para mejor legibilidad */
+tbody tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Estilos para el botón de Volver (similar a consulta.css) */
+.volver {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.btn-volver {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-volver:hover {
+    background-color: #ffcc00;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación de entrada para el contenedor principal */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

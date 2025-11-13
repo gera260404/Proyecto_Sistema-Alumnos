@@ -1,0 +1,183 @@
+/* ==============================
+   ESTILOS PARA consulta.html
+   (Formulario de Consulta)
+   ============================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2e8bff, #6f00ff);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo del Formulario (Contenedor principal) */
+form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 50px;
+    margin-top: 120px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+/* Estilo del campo de entrada de Email */
+form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    color: #333; /* Texto oscuro en el input */
+}
+
+/* Estilo del botón de Submit */
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffcc00; /* Amarillo/Dorado distintivo */
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ffd633;
+    transform: scale(1.03); /* Ligeramente más sutil que el 1.05 */
+}
+
+/* Animación de entrada para el formulario */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==============================
+   ESTILOS DE VOLVER (Común)
+   ============================== */
+
+.volver {
+    margin-top: 30px;
+}
+
+.btn-volver {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block; /* Asegura que la transición funcione bien */
+}
+
+.btn-volver:hover {
+    background-color: #ffcc00; /* Mismo amarillo/dorado */
+    color: #000;
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   ESTILOS PARA consulta.php
+   (Resultados de la Consulta)
+   ============================== */
+
+/* El body general ya tiene el fondo aplicado */
+
+/* Contenedor de resultados de consulta */
+.consulta-resultado {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 60px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    margin-top: 100px; /* Separación del top si no está centrado */
+    animation: slideUp 0.9s ease-in-out;
+}
+
+
+
+/* Estilizado para los elementos de resultado dentro de consulta.php */
+body h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #f5f2e7; /* Destacar el título */
+}
+
+body label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 15px;
+    text-align: center;
+}
+
+body input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0f4c75; /* Texto del resultado en el color del fondo */
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 80%;
+    max-width: 300px;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para el mensaje de error/éxito */
+body:not(form) { /* Asegura que esto solo aplica a consulta.php */
+    text-align: center;
+}
+/* Estilizando el mensaje de "No existe un alumno con ese mail" */
+body > p {
+    font-size: 1.2rem;
+    color: #ffdddd;
+    font-weight: 600;
+}
+
+
+/* Animación de entrada para los resultados */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
